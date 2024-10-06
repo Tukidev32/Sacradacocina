@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Responsive con Bootstrap</title>
+  <!-- Vinculación de Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Gusto di Nonna</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Navbar text with an inline element
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div id="carrusel" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://barradeideas.theobjective.com/wp-content/uploads/2019/09/fast-food.jpg"
+            class="d-block w-100 c-img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Comidas Reconfortantes</h5>
+            <p>Disfruta de nuestras comidas más habituales, como hamburguesas jugosas, papas fritas crujientes, lomos
+              sabrosos y milanesas irresistibles. La opción perfecta para satisfacer cualquier antojo en un ambiente
+              casual y amigable.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://resizer.glanacion.com/resizer/v2/fugazzeta-rellena-de-queso-lincoln-y-queso-azul-X6FSNA3BJBF7XB36HEECQGYS7Y.jpg?auth=2576f6831e7b425a3c25e75fc2ef6b59733ddf4148777792ecbb222f36f5b1fd&width=768&height=512&quality=70&smart=true"
+            class="d-block w-100 c-img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sabor Tradicional</h5>
+            <p>Disfruta de nuestra deliciosa fugazzeta, un clásico argentino que combina la suavidad de la masa con el
+              sabor del queso y la cebolla. Perfecta para compartir en cualquier ocasión.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/579bd3a2197aea7c6b7aa2e2/1593476854523-7S0ENJP7JQ37JK4KBN4F/Best-argentinian-wine-by-puerto-la-boca-in-little-italy-san-diego.jpg"
+            class="d-block w-100 c-img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Selección de Bebidas</h5>
+            <p>Disfruta de nuestra variada selección de bebidas, que incluye refrescantes gaseosas, cervezas artesanales
+              y vinos exquisitos. Perfectas para complementar tu comida y realzar cada momento.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+
+  <section class="container">
+    <div class="row my-1">
+      <div class="col">
+        <h1 class="text-primary display-1 text-center">Descubre más</h1>
+      </div>
+    </div>
+
+    <div class="row align-content-center justify-content-center">
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card mt-2" style="width: 17rem;">
+          <img src="img/cards/nuestracarta.jpg" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Nuestra Carta</h5>
+            <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card mt-2" style="width: 17rem;">
+          <img src="img/cards/platodeldia.jpg" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Platos del Día</h5>
+            <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card mt-2" style="width: 17rem;">
+          <img src="img/cards/promos.jpg" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Promociones del Día</h5>
+            <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card mt-2" style="width: 17rem;">
+          <img src="img/cards/sobrenosotros.jpg" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Sobre Nosotros</h5>
+            <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-dark text-light py-4 mt-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Contacto</h5>
+          <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+          <p>Teléfono: (123) 456-7890</p>
+          <p>Email: info@ejemplo.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces Rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Inicio</a></li>
+            <li><a href="#" class="text-light">Menú</a></li>
+            <li><a href="#" class="text-light">Promociones</a></li>
+            <li><a href="#" class="text-light">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Síguenos</h5>
+          <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i> Facebook</a>
+          <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i> Twitter</a>
+          <a href="#" class="text-light"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
