@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --verde-fresco: #28a745;
+    --rojo-tomate: #ff6347;
+    --amarillo-mostaza: #ffca28;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #F5F5DC;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+.navbar-brand,
+.nav-link,
+.navbar-text {
+    color: white;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: var(--rojo-tomate);
+}
+
+
+.carousel-caption h5 {
+    color: var(--amarillo-mostaza);
+}
+
+.carousel-caption p {
+    color: white;
+}
+
+
+.btn-primary {
+    background-color: var(--rojo-tomate);
+    border-color: var(--rojo-tomate);
+}
+
+.btn-primary:hover {
+    background-color: var(--verde-fresco);
+    border-color: var(--verde-fresco);
+}
+
+.btn-primary:active {
+    background-color: var(--verde-fresco);
+    border-color: var(--verde-fresco);
+    filter: brightness(65%);
+}
+
+.carousel-item {
+    height: 60vh;
+    width: 100%;
+}
+
+.c-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #e5d3b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    object-fit: cover;
+}
+
+#discover {
+    color: #c1440e;
+}
+
+.social-link {
+    font-size: 23px;
+}
+
+.g-map {
+    height: 60vh;
+}
+
+.g-map iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
